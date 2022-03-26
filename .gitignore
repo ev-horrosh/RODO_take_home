@@ -5,7 +5,7 @@ steps.md
 # C extensions
 *.so
 EXTRAS
-
+venv
 # Distribution / packaging
 .Python
 env/
