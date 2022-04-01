@@ -24,5 +24,5 @@ TODO:
 
 - more DRY
 - csv parsinng(`ParseDataFromCsv`class) can be a bit generalizable given the data is consistent
-  ~~- implement pydantic data validation~~
+- ~~implement pydantic data validation~~
 - implement glob list of files
