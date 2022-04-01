@@ -1,3 +1,4 @@
+from dataclasses import field
 from extraction import ParseDataFromCsv
 import pandas as pd
 from models.models import Table
@@ -13,3 +14,13 @@ df1 = pd.DataFrame(dealer_data1)
 df2 = pd.DataFrame(dealer_data2)
 main_df = pd.concat([df1, df2], axis=0)
 main_df.replace('', 0, inplace=True)
+
+''' OPTIONAL CSV WRITE DATA TO ONE CSV'''
+# with open('main.csv', 'w',newline='') as main:
+#     fieldnames=list(dealer_data1[0].keys())
+#     writer=csv.DictWriter(main,fieldnames=fieldnames)
+#     writer.writeheader()
+#     for r in dealer_data1:
+#         writer.writerow(r)
+#     for r in dealer_data2:
+#         writer.writerow(r)
